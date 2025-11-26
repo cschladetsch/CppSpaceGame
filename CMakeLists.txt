@@ -60,10 +60,20 @@ set(HEADERS
     src/camera.h
 )
 
+# Main game executable
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 
 target_include_directories(${PROJECT_NAME} PRIVATE src)
 target_link_libraries(${PROJECT_NAME} PRIVATE SDL3::SDL3 glm::glm)
+
+# Ship creation utility
+add_executable(create_ship
+    src/create_ship.cpp
+    src/voxel.cpp
+    src/voxel.h
+)
+target_include_directories(create_ship PRIVATE src)
+target_link_libraries(create_ship PRIVATE glm::glm)
 
 # Copy data files to bin directory
 file(COPY ${CMAKE_SOURCE_DIR}/data/ship.bin DESTINATION ${CMAKE_SOURCE_DIR}/bin/data)
