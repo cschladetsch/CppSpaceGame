@@ -1,0 +1,4 @@
+title: SpaceGame
+description: A voxel-based space simulator built with C++, SDL3, and GLM, rendering procedurally generated starships through a custom voxel engine with a fully controllable camera.
+theme: null
+markdown: kramdown

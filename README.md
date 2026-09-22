@@ -1,5 +1,8 @@
 # SpaceGame
 
+📖 [Docs & diagrams](https://cschladetsch.github.io/CppSpaceGame/)
+
+
 A voxel-based space simulator built with C++, SDL3, and GLM. Features procedurally generated starships rendered using a custom voxel engine.
 
 ## Features
